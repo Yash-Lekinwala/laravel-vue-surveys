@@ -1,11 +1,11 @@
 <template>
-  <h1>Surveys</h1>
+  <PageComponent title="Surveys">
+    Content Goes Here
+    </PageComponent>
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+import PageComponent from "../components/PageComponent.vue";
 </script>
 
 <style>
