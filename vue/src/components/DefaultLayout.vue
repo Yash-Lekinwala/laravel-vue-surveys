@@ -111,10 +111,12 @@ export default {
 
         function logout()
         {
-            store.commit('logout');
+          store.dispatch('logout')
+          .then(() => {
             router.push({
-                name: 'Login'
-            })
+              name: 'Login'
+            });
+          });
         }
 
         return {
